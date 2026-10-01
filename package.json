@@ -1,6 +1,7 @@
 {
   "name": "morstad.eu",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "astro dev",
@@ -36,8 +37,5 @@
   },
   "engines": {
     "node": ">=22.12.0"
-  },
-  "allowScripts": {
-    "esbuild": true
   }
 }

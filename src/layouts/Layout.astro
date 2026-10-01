@@ -3,11 +3,16 @@ import "../styles/global.css";
 import ThemeToggle from "../components/ThemeToggle.tsx";
 
 interface Props {
-  title?: string;
-  max?: string;
+	title?: string;
+	description?: string;
+	max?: string;
 }
 
-const { title = "halvard_mørstad", max } = Astro.props;
+const {
+	title = "Halvard Mørstad — Principal Engineer, Cloud & Infrastructure",
+	description = "Principal engineer with ten years across cloud, infrastructure, and full-stack development. Hands-on engineering, advisory, and fractional CTO work.",
+	max,
+} = Astro.props;
 ---
 
 <html lang="en" data-theme="dark">
@@ -18,6 +23,17 @@ const { title = "halvard_mørstad", max } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Halvard Mørstad",
+        url: "https://morstad.eu",
+        jobTitle: "Principal Engineer",
+      })}
+    />
     <!-- Fonts: active = IBM Plex Mono. To switch, replace the href with Space Mono or Fira Mono -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
