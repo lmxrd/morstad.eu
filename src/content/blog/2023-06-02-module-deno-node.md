@@ -2,7 +2,7 @@
 title: How to build a module for both Deno and Node
 date: "2023-06-02"
 tags: [Deno, Node.js]
-codeFolderLink: https://github.com/halvardssm/blog-code/tree/main/code/module_deno_node
+codeFolderLink: https://github.com/lmxrd/blog-code/tree/main/code/module_deno_node
 summary: "A shared build setup so one codebase ships as a package for both runtimes."
 ---
 

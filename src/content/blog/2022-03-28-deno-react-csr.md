@@ -2,7 +2,7 @@
 title: React CSR with Deno
 date: "2022-03-28"
 tags: [Deno, React]
-codeFolderLink: https://github.com/halvardssm/blog-code/tree/main/code/deno_react
+codeFolderLink: https://github.com/lmxrd/blog-code/tree/main/code/deno_react
 summary: "Serving a client-rendered React app straight from a vanilla Deno server."
 ---
 
@@ -181,6 +181,6 @@ Try to run `make bundle` again, and this time it should not throw any errors. Ta
 
 ## Epilogue
 
-Well done! You have now completed the mini-lesson on how to use Deno to bundle your React app! Although it is not yet fully optimized for production, you can avoid many of the headaches you would usually have when using Node. Share your websites [here](https://github.com/halvardssm/blog-code/blob/main/deno-react-cra.md) for others to draw inspiration from!
+Well done! You have now completed the mini-lesson on how to use Deno to bundle your React app! Although it is not yet fully optimized for production, you can avoid many of the headaches you would usually have when using Node. Share your websites [here](https://github.com/lmxrd/blog-code/blob/main/deno-react-cra.md) for others to draw inspiration from!
 
 See you around! 👋🏻

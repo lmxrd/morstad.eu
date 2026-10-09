@@ -46,7 +46,7 @@ iwr https://deno.land/x/install/install.ps1 -useb | iex
 
 > 🐳 If you are feeling really adventurous, you can also run Deno via Docker. See [repo](https://github.com/denoland/deno_docker)
 
-Easy, no? Assuming you said _"yes"_, good, if not feel free to head over to the [discussions](https://github.com/halvardssm/blog-code/discussions)!
+Easy, no? Assuming you said _"yes"_, good, if not feel free to head over to the [discussions](https://github.com/lmxrd/blog-code/discussions)!
 
 ### Using the CLI
 

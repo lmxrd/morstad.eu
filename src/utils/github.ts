@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const CACHE_FILE = join(process.cwd(), "node_modules", ".cache", "github-stars.json");
@@ -22,24 +22,24 @@ function saveCache(cache: Cache) {
 }
 
 const PLACEHOLDER_STARS: Record<string, number> = {
-  "halvardssm/deno-nessie": 142,
-  "halvardssm/oak-middleware-jwt": 28,
-  "halvardssm/deno_argon2": 15,
-  "halvardssm/js-helpers": 12,
-  "halvardssm/deno-workspaces": 8,
-  "halvardssm/docker-custom-images": 5,
-  "halvardssm/go-domeneshop-client": 3,
-  "halvardssm/terraform-provider-domeneshop": 2,
-  "halvardssm/github-action-tag-release": 4,
-  "halvardssm/git-backup": 7,
-  "halvardssm/habit-tracker": 2,
-  "halvardssm/morstad.eu": 3,
-  "halvardssm/munchkin-buddy": 1,
-  "halvardssm/c-checkers": 1,
-  "halvardssm/js-chess-has-quirks": 1,
-  "halvardssm/parcel-reporter-ip": 2,
-  "halvardssm/package-translation-fetch": 1,
-  "halvardssm/virtual-assistant": 1,
+  "lmxrd/deno-nessie": 142,
+  "lmxrd/oak-middleware-jwt": 28,
+  "lmxrd/deno_argon2": 15,
+  "lmxrd/js-helpers": 12,
+  "lmxrd/deno-workspaces": 8,
+  "lmxrd/docker-custom-images": 5,
+  "lmxrd/go-domeneshop-client": 3,
+  "lmxrd/terraform-provider-domeneshop": 2,
+  "lmxrd/github-action-tag-release": 4,
+  "lmxrd/git-backup": 7,
+  "lmxrd/habit-tracker": 2,
+  "lmxrd/morstad.eu": 3,
+  "lmxrd/munchkin-buddy": 1,
+  "lmxrd/c-checkers": 1,
+  "lmxrd/js-chess-has-quirks": 1,
+  "lmxrd/parcel-reporter-ip": 2,
+  "lmxrd/package-translation-fetch": 1,
+  "lmxrd/virtual-assistant": 1,
   "codash-platform/codash": 0,
   "SocialSlam/social-slam-frontend": 0,
   "CodeChroma/gmtk_2020": 0,

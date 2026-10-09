@@ -2,7 +2,7 @@
 title: Realtime chat application with Deno and React
 date: "2023-09-11"
 tags: [Deno, React, WebSocket]
-codeFolderLink: https://github.com/halvardssm/blog-code/tree/main/code/deno_rtc
+codeFolderLink: https://github.com/lmxrd/blog-code/tree/main/code/deno_rtc
 summary: "Building a chat app with WebSockets, using Deno for the backend and React on the frontend."
 ---
 
