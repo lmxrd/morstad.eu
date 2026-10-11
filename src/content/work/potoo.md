@@ -1,13 +1,10 @@
 ---
-symbol: 📦
 title: Potoo
-tags: [TypeScript, App]
+tags: [Rust, App, TypeScript, React]
 url: https://github.com/lmxrd/potoo
 description: A small, self-hosted, privacy-friendly web analytics app.
-icon: "package"
-iconColor: "#85b7eb"
+icon: "device-analytics"
 featured: true
-selected: false
 githubStars: false
 disabled: false
 ---

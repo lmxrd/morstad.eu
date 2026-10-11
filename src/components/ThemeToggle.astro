@@ -1,0 +1,35 @@
+---
+import { IconMoon, IconSun } from "@tabler/icons-astro";
+---
+
+<button
+  id="theme-toggle"
+  aria-label="Toggle theme"
+  style="background: transparent; border: none; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--color-muted);"
+>
+  <IconMoon class="theme-moon" size={17} stroke={2} />
+  <IconSun class="theme-sun" size={17} stroke={2} />
+</button>
+
+<style>
+  :global(html[data-theme="dark"]) :global(.theme-sun) {
+    display: none;
+  }
+  :global(html[data-theme="light"]) :global(.theme-moon) {
+    display: none;
+  }
+</style>
+
+<script>
+  const button = document.getElementById("theme-toggle");
+  button?.addEventListener("click", () => {
+    const next =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "light"
+        : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch {}
+  });
+</script>

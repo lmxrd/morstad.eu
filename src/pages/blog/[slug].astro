@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Icon from "../../components/Icon.tsx";
+import { IconFolder } from "@tabler/icons-astro";
 import TagList from "../../components/TagList.astro";
 import PageHeader from "../../components/PageHeader.astro";
 import { getCollection, render } from "astro:content";
@@ -48,7 +48,7 @@ const { title, date, tags, codeFolderLink } = post.data;
         class="flex items-center gap-2 text-muted card"
         style="padding: 0.5rem 0.75rem; font-size: 0.75rem; margin-bottom: 1.5rem;"
       >
-        <Icon name="folder" size={14} color="var(--color-dim)" />
+        <IconFolder size={14} color="var(--color-dim)" stroke={2} />
         <span>code_folder:</span>
         <a
           href={codeFolderLink}

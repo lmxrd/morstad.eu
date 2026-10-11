@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import PostCard from "../components/PostCard.astro";
 import PageHeader from "../components/PageHeader.astro";
-import Icon from "../components/Icon.tsx";
+import { IconRss } from "@tabler/icons-astro";
 import { getCollection } from "astro:content";
 import { getTagColor } from "../utils/tags.ts";
 
@@ -25,7 +25,7 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))];
     class="inline-flex items-center gap-2 mb-5"
     style="padding: 0.625rem 0.875rem; font-size: 0.8125rem; border: 1px solid var(--color-border); border-radius: 4px; color: var(--color-muted); background: var(--color-card); transition: border-color 0.15s; width: max-content;"
   >
-    <Icon name="rss" size={16} color="var(--color-link)" />
+    <IconRss size={16} color="var(--color-link)" stroke={2} />
     <span>Subscribe to this blog via RSS</span>
   </a>
 

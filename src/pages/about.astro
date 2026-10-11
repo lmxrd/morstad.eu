@@ -1,6 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Icon from "../components/Icon.tsx";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBulb,
+  IconClick,
+  IconCode,
+  IconMail,
+  IconUsers,
+} from "@tabler/icons-astro";
 import PageHeader from "../components/PageHeader.astro";
 import CompanyCards from "../components/CompanyCards.astro";
 ---
@@ -21,7 +29,7 @@ import CompanyCards from "../components/CompanyCards.astro";
           rel="noopener"
           aria-label="GitHub"
         >
-          <Icon name="brand-github" size={16} color="var(--color-dim)" />
+          <IconBrandGithub size={16} color="var(--color-dim)" stroke={2} />
         </a>
         <a
           href="https://www.linkedin.com/in/halvard-mørstad-4b8b13144/"
@@ -29,10 +37,10 @@ import CompanyCards from "../components/CompanyCards.astro";
           rel="noopener"
           aria-label="LinkedIn"
         >
-          <Icon name="brand-linkedin" size={16} color="var(--color-dim)" />
+          <IconBrandLinkedin size={16} color="var(--color-dim)" stroke={2} />
         </a>
         <a href="mailto:jobs@morstad.eu" aria-label="Email">
-          <Icon name="mail" size={16} color="var(--color-dim)" />
+          <IconMail size={16} color="var(--color-dim)" stroke={2} />
         </a>
       </div>
     </div>
@@ -82,7 +90,7 @@ import CompanyCards from "../components/CompanyCards.astro";
     class="btn-outline"
     style="padding: 0.625rem 1.125rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.625rem; margin-bottom: 2rem; text-decoration: none;"
   >
-    <Icon name="click" size={20} color="var(--color-link)" />
+    <IconClick size={20} color="var(--color-link)" stroke={2} />
     <span>Are you a developer? See the technical version here</span>
   </a>
 
@@ -111,7 +119,7 @@ import CompanyCards from "../components/CompanyCards.astro";
     <div class="flex flex-col gap-3">
       <article class="card" style="padding: 1rem;">
         <div class="flex items-center gap-2 mb-1.5">
-          <Icon name="code" size={16} color="#85b7eb" />
+          <IconCode size={16} color="#85b7eb" stroke={2} />
           <h3 class="font-medium m-0 text-heading" style="font-size: 0.875rem;">
             Your technical co-founder
           </h3>
@@ -128,7 +136,7 @@ import CompanyCards from "../components/CompanyCards.astro";
       </article>
       <article class="card" style="padding: 1rem;">
         <div class="flex items-center gap-2 mb-1.5">
-          <Icon name="bulb" size={16} color="#f0997b" />
+          <IconBulb size={16} color="#f0997b" stroke={2} />
           <h3 class="font-medium m-0 text-heading" style="font-size: 0.875rem;">
             Your interim CTO
           </h3>
@@ -145,7 +153,7 @@ import CompanyCards from "../components/CompanyCards.astro";
       </article>
       <article class="card" style="padding: 1rem;">
         <div class="flex items-center gap-2 mb-1.5">
-          <Icon name="users" size={16} color="#97c459" />
+          <IconUsers size={16} color="#97c459" stroke={2} />
           <h3 class="font-medium m-0 text-heading" style="font-size: 0.875rem;">
             Your technical advisor
           </h3>

@@ -1,6 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Icon from "../components/Icon.tsx";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBulb,
+  IconClick,
+  IconCode,
+  IconMail,
+  IconUsers,
+} from "@tabler/icons-astro";
 import Card from "../components/Card.astro";
 import H1 from "../components/text/H1.astro";
 import H2 from "../components/text/H2.astro";
@@ -20,7 +28,7 @@ import CompanyCards from "../components/CompanyCards.astro";
           rel="noopener"
           aria-label="GitHub"
         >
-          <Icon name="brand-github" size={16} color="var(--color-dim)" />
+          <IconBrandGithub size={16} color="var(--color-dim)" stroke={2} />
         </a>
         <a
           href="https://www.linkedin.com/in/halvard-mørstad-4b8b13144/"
@@ -28,10 +36,10 @@ import CompanyCards from "../components/CompanyCards.astro";
           rel="noopener"
           aria-label="LinkedIn"
         >
-          <Icon name="brand-linkedin" size={16} color="var(--color-dim)" />
+          <IconBrandLinkedin size={16} color="var(--color-dim)" stroke={2} />
         </a>
         <a href="mailto:jobs@morstad.eu" aria-label="Email">
-          <Icon name="mail" size={16} color="var(--color-dim)" />
+          <IconMail size={16} color="var(--color-dim)" stroke={2} />
         </a>
       </div>
     </div>
@@ -84,7 +92,7 @@ import CompanyCards from "../components/CompanyCards.astro";
     class="btn-outline"
     style="padding: 1.25rem 1.5rem; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 1.75rem; margin-bottom: 2rem; text-decoration: none;"
   >
-    <Icon name="click" size={28} color="var(--color-link)" />
+    <IconClick size={28} color="var(--color-link)" stroke={2} />
     <span
       >I can also present to your&nbsp;<br />non-technical stakeholders&nbsp;<br
       />see that view here</span
@@ -98,14 +106,14 @@ import CompanyCards from "../components/CompanyCards.astro";
     style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));"
   >
     <Card>
-      <Icon name="code" size={16} color="#85b7eb" />
+      <IconCode size={16} color="#85b7eb" stroke={2} />
       <H3 class="mt-2.5 mb-1">Hands-on engineering</H3>
       <p class="m-0 text-muted text-xs leading-relaxed">
         Cloud, infra, and full-stack builds you can hand off with confidence.
       </p>
     </Card>
     <Card>
-      <Icon name="bulb" size={16} color="#f0997b" />
+      <IconBulb size={16} color="#f0997b" stroke={2} />
       <H3 class="mt-2.5 mb-1">Advisory and greenfield builds</H3>
       <p class="m-0 text-muted text-xs leading-relaxed">
         Pick the right stack, validate before committing budget, or find what's
@@ -113,7 +121,7 @@ import CompanyCards from "../components/CompanyCards.astro";
       </p>
     </Card>
     <Card>
-      <Icon name="users" size={16} color="#97c459" />
+      <IconUsers size={16} color="#97c459" stroke={2} />
       <H3 class="mt-2.5 mb-1">Fractional leadership</H3>
       <p class="m-0 text-muted text-xs leading-relaxed">
         Interim CTO work, team building, and technical strategy.

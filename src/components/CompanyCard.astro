@@ -1,9 +1,8 @@
 ---
-import type { Component, FC, ReactNode } from "react";
-import Icon, { type IconName } from "./Icon";
+import type { IconComponent } from "./Icon";
 
 interface Props {
-  icon: IconName;
+  icon: IconComponent;
   iconColor?: string;
   title: string;
   subtitle: string;
@@ -11,10 +10,11 @@ interface Props {
 }
 
 const { icon, iconColor, title, subtitle, description } = Astro.props;
+const IconComponent = icon;
 ---
 
 <div class="card p-4">
-  <Icon name={icon} size={16} color={iconColor} />
+  <IconComponent size={16} color={iconColor} stroke={2} />
   <div class="text-heading font-medium mb-1">{title}</div>
   <div class="text-muted text-xs m-0 mb-2">{subtitle}</div>
   <p class="m-0 text-muted text-xs leading-relaxed">{description}</p>

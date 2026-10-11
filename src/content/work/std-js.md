@@ -1,13 +1,10 @@
 ---
-symbol: 📦
 title: stdx
-tags: [TypeScript, Library]
+tags: [TypeScript, JavaScript, Library]
 url: https://github.com/lmxrd/std-js
-description: Extensions to the Deno Standard Library, providing commonly used utility functions and types.
-icon: "package"
-iconColor: "#85b7eb"
+description: Extension to the Deno Standard Library, providing commonly used utility functions and types.
+icon: "stack-2"
 featured: true
-selected: false
 githubStars: true
 disabled: false
 ---

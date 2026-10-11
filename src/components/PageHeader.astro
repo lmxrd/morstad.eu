@@ -1,5 +1,5 @@
 ---
-import Icon from "./Icon.tsx";
+import { IconHome } from "@tabler/icons-astro";
 
 interface Props {
   current: "work" | "blog" | "about";
@@ -52,7 +52,7 @@ const pages = [
 
   <div class="flex items-center gap-4">
     <a href="/" aria-label="Home" style="text-decoration: none;">
-      <Icon name="home" size={18} color="var(--color-muted)" />
+      <IconHome size={18} color="var(--color-muted)" stroke={2} />
     </a>
     <h1
       class="font-medium text-heading"

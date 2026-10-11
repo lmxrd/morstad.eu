@@ -1,12 +1,9 @@
 ---
-symbol: 🐹
 title: Domeneshop Go
-tags: [Go, Library]
+tags: [Go, Library, Terraform]
 url: https://github.com/lmxrd/domeneshop-go
 description: A Go SDK and Terraform/OpenTofu provider for domene.shop.
-icon: "world"
-iconColor: "#85b7eb"
+icon: "world-www"
 featured: false
-selected: false
 disabled: false
 ---

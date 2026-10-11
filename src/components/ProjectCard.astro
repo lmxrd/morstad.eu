@@ -1,5 +1,7 @@
 ---
-import Icon from "./Icon.tsx";
+import { IconExternalLink, IconStar } from "@tabler/icons-astro";
+import { getIcon } from "../utils/icons";
+import { randomColor } from "../utils/colors";
 import TagList from "./TagList.astro";
 import type { CollectionEntry } from "astro:content";
 
@@ -12,12 +14,14 @@ interface Props {
 
 const { project, compact = false, stars = null } = Astro.props;
 const { title, tags, description, icon, iconColor, url } = project.data;
+const ProjectIcon = getIcon(icon);
+const color = iconColor ?? randomColor();
 const titleSize = compact ? "0.8125rem" : "0.875rem";
 ---
 
 <article class="card flex flex-col" style="padding: 1rem; height: 100%;">
   <div class="flex items-center gap-2 mb-1">
-    <Icon name={icon} size={16} color={iconColor} />
+    <ProjectIcon size={16} color={color} stroke={2} />
     <h3
       class="font-medium m-0 text-heading flex-1"
       style={`font-size: ${titleSize};`}
@@ -36,7 +40,7 @@ const titleSize = compact ? "0.8125rem" : "0.875rem";
           class="text-dim"
           style="display: inline-flex; align-items: center;"
         >
-          <Icon name="external-link" size={12} color="var(--color-dim)" />
+          <IconExternalLink size={12} color="var(--color-dim)" stroke={2} />
         </a>
       )
     }
@@ -46,7 +50,7 @@ const titleSize = compact ? "0.8125rem" : "0.875rem";
           class="flex items-center gap-1 text-dim"
           style="font-size: 0.6875rem;"
         >
-          <Icon name="star" size={12} color="var(--color-dim)" />
+          <IconStar size={12} color="var(--color-dim)" stroke={2} />
           {stars}
         </span>
       )

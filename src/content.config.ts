@@ -17,15 +17,13 @@ const blog = defineCollection({
 const work = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/work" }),
   schema: z.object({
-    symbol: z.string().optional(),
     title: z.string(),
     tags: z.array(z.string()),
     url: z.string().optional(),
     description: z.string(),
     icon: z.string(),
-    iconColor: z.string(),
+    iconColor: z.string().optional(),
     featured: z.boolean().default(false),
-    selected: z.boolean().default(false),
     githubStars: z.boolean().default(false),
     disabled: z.boolean().default(false),
   }),

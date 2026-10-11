@@ -1,13 +1,10 @@
 ---
-symbol: 📦
 title: SkerDB
-tags: [Go, Library]
-url: https://codeberg.org/hmxrd/skerdb
+tags: [Go, Library, Api]
+url: https://codeberg.org/lmxrd/skerdb
 description: Self hosted multi user/database based on SQLite for SQL over HTTP
-icon: "package"
-iconColor: "#85b7eb"
+icon: "database-star"
 featured: false
-selected: false
 githubStars: false
 disabled: false
 ---

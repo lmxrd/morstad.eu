@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import ThemeToggle from "../components/ThemeToggle.tsx";
+import ThemeToggle from "../components/ThemeToggle.astro";
 
 interface Props {
 	title?: string;
@@ -78,7 +78,7 @@ const {
       style={`max-width: ${max ?? "860px"};`}
     >
       <div style="position: absolute; top: 2rem; right: 2rem; z-index: 10;">
-        <ThemeToggle client:load />
+        <ThemeToggle />
       </div>
       <slot />
     </main>
